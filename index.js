@@ -2,7 +2,7 @@
 const express = require("express");
 
 const app = express();
-const PORT = process.env.PORT || 9000;
+const port = process.env.PORT || 8080;
 
 app.get("/", (req, res) => {
   res.status(200).send({
@@ -11,6 +11,6 @@ app.get("/", (req, res) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`Servidor iniciado en: http://localhost:${PORT}`);
+app.listen(port, () => {
+  console.log(`Servidor iniciado en: http://localhost:${port}`);
 });
