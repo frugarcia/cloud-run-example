@@ -8,6 +8,7 @@ app.get("/", (req, res) => {
   res.status(200).send({
     name: "Fernando",
     lastName: "Ruiz",
+    age: 31,
   });
 });
 
